@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>TP2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <script type="text/javascript" src="formulaire.js"></script>
+        <style>
+          body{
+              background-color: #e9ebee;              
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              font-size: 17px;
+              font-style: normal;
+              margin: 250;
+              max-width: 800px;   
+                         
+          }
+          #centre {
+            width: 1300px;
+            background-color: white;
+          }
+          #error {
+              background-color: rgb(248, 167, 214);
+              border: 1px black solid;
+              padding: 5px;
+              margin-top: 25px;
+          }
+          #resultat {
+              background-color: rgb(51, 218, 51);
+              padding: 5px;
+              margin-top: 25px;
+              color: white;
+          }
+          th.right{
+              text-align: left;
+              width: 70%;
+              padding-top: 7px;
+              padding-bottom: 7px;
+          }
+          input.textarea {
+              width:200px;
+              height: 20px;
+              border : 1p gray solid; 
+          }
+        </style>
+        
+        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+        <!--<link rel="stylesheet" href="style.css">-->
+        <!--<script src="js/main.js"></script>-->
+    </head>
+    <body>        
+        <h1>Saisie de votre fiche "Personne"</h1>
+        <div id="centre">
+        <table width="50%">
+        <tr>
+                <th align="left">
+                <label for="firstname">Nom</label></th>
+                <th class="right"><input type="text" name="firstname" value="" class="textarea"id="firstname"></th>
+        </tr>
+        <tr>
+                <th align="left">
+                <label for="name">Prénom</label></th>
+                <th class="right"><input type="text" name="name" value="" class="textarea"id="name"></th>
+        </tr>
+        <tr>
+                <th align="left">
+                <label for="date">Date de naissance</label></th>
+                <th class="right"><input type="date" name="date" class="textarea" placeholder="JJ/MM/AAAA"id="date"></th>
+        </tr>
+        <tr>
+                <th align="left">
+                <label for="adresse">Adresse</label></th>
+                <th class="right"><input type="text" name="adresse" value="" class="textarea"id="adresse"></th>
+        </tr>
+        <tr>
+                <th align="left">
+                <label for="mail">Mail</label></th>
+                <th class="right"><input type="text" name="mail" value="" class="textarea"id="mail"></th>
+        </tr>
+        <tr>
+                <th align="left"></th>
+                <th align="left"><input type="button" value="Valider"onclick="validation()"/></th>
+        </tr>
+        </tr>
+    </table>
+    </div>
+    <div id="error">
+        <p></p>
+    </div>
+    <div id="resultat">
+            <p></p>
+        </div>
+    </body>
+</html>
